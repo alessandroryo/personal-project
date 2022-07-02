@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use App\Models\User;
-use PHPUnit\Framework\TestCase;
+use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class SearchUserTest extends TestCase
@@ -36,7 +36,7 @@ class SearchUserTest extends TestCase
             ->orWhere('email', 'LIKE', "Ryo")
             ->get();
 
-        $this->assertTrue($search[0]->name == $users[0]->name);
-        $this->assertFalse($search[0]->name == $users[1]->name);
+        $this->assertEquals($search[0]->name, $users[0]->name);
+        $this->assertNotEquals($search[0]->name, $users[1]->name);
     }
 }

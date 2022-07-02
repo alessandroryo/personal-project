@@ -48,7 +48,7 @@ class SearchUserTest extends TestCase
         $route = route('user-management');
 
         $requestBody = [
-            'search' => 'Ryo'
+            'search' => 'ZZZ'
         ];
 
         $response = $this->actingAs($user)->get($route, $requestBody);
