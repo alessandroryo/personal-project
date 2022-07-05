@@ -1,5 +1,5 @@
 # Security Assignment 3: Hacktivist
-## Prevents Snooping and Attacks (Session Hijacking)
+## Prevents Snooping and Attacks
 
 - **Using HTTPS/TLS (SSL Certificate)**
     Currently, our website does not have an SSL certificate, but it will be given an SSL certificate by the company that becomes our client later because we use hosting from their company. You'll find it next to the URL in your browser.

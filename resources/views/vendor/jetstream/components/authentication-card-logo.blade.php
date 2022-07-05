@@ -1,3 +1,3 @@
 <a href="/">
-    <img src="/img/ar-icon.png" alt="" class="h-28">
+    <img src="/img/serviam.png" alt="" class="h-28">
 </a>
