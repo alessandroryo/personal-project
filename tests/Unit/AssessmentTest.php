@@ -9,7 +9,7 @@ use App\Models\Assessment;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ReportTest extends TestCase
+class AssessmentTest extends TestCase
 {
 
     use RefreshDatabase;
@@ -36,7 +36,7 @@ class ReportTest extends TestCase
             'subject_id' => $subject->id,
             'score' => 95
         ]);
-        $this->assertEquals($assessment->predicate(), 'A');
+        $this->assertEquals('A', $assessment->predicate());
     }
 
     /**
@@ -60,7 +60,7 @@ class ReportTest extends TestCase
             'subject_id' => $subject->id,
             'score' => 85
         ]);
-        $this->assertEquals($assessment->predicate(), 'B');
+        $this->assertEquals('B', $assessment->predicate());
     }
 
     /**
@@ -84,7 +84,7 @@ class ReportTest extends TestCase
             'subject_id' => $subject->id,
             'score' => 80
         ]);
-        $this->assertEquals($assessment->predicate(), 'C');
+        $this->assertEquals('C', $assessment->predicate());
     }
 
         /**
@@ -108,6 +108,6 @@ class ReportTest extends TestCase
             'subject_id' => $subject->id,
             'score' => 10
         ]);
-        $this->assertEquals($assessment->predicate(), 'D');
+        $this->assertEquals('D', $assessment->predicate());
     }
 }
