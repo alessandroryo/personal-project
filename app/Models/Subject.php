@@ -45,6 +45,6 @@ class Subject extends Model
     }
 
     public function isPassed() {
-        return $this->average() > $this->passing_grade;
+        return $this->average() >= $this->passing_grade;
     }
 }

@@ -19,6 +19,7 @@ class Report extends Model
         return $this->hasMany(Subject::class);
     }
     public function average() {
+        
         $subjects = $this->subjects();
 
         if ($subjects->count() == 0) return 0;
